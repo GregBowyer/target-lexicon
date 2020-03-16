@@ -24,7 +24,9 @@ mod parse_error;
 mod targets;
 #[macro_use]
 mod triple;
+mod default_to_host;
 
+pub use self::default_to_host::DefaultToHost;
 pub use self::host::HOST;
 pub use self::parse_error::ParseError;
 pub use self::targets::{
